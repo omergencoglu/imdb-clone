@@ -6,10 +6,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* Header
-        Navbar
-        SearchBox */}
-        <Header></Header>
+        <Header />
         {children}
       </body>
     </html>
