@@ -6,18 +6,25 @@ export default function Card({ result }) {
   return (
     <div className="cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200 group">
       <Link href={`/movie/${result.id}`}>
-        <Image
-          src={`https://image.tmdb.org/t/p/original/${
-            result.backdrop_path || result.poster_path
-          }`}
-          width={500}
-          height={300}
-          className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
-          style={{ maxWidth: "100%", height: "auto", width: "auto" }}
-          placeholder="blur"
-          blurDataURL="/spinner.svg"
-          alt={result.name || "Image is not available"}
-        />
+        <div className="relative w-auto h-64 sm:h-80 lg:h-72 overflow-hidden sm:rounded-lg group-hover:opacity-80 transition-opacity duration-200 object-cover">
+          <Image
+            src={
+              result.backdrop_path || result.poster_path
+                ? `https://image.tmdb.org/t/p/original/${
+                    result.poster_path || result.backdrop_path
+                  }`
+                : "/fallback.jpg"
+            }
+            fill
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+            style={{ objectFit: "cover" }}
+            placeholder="blur"
+            blurDataURL="/spinner.svg"
+            alt={result.title || result.name}
+          />
+        </div>
         <div className="p-2">
           <p className="line-clamp-2 text-md">{result.overview}</p>
           <h2 className="truncate text-lg font-bold">
