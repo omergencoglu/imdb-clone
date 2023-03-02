@@ -13,7 +13,7 @@ export default function Card({ result }) {
           width={500}
           height={300}
           className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
-          style={{ maxWidth: "100%", height: "auto" }}
+          style={{ maxWidth: "100%", height: "auto", width: "auto" }}
           placeholder="blur"
           blurDataURL="/spinner.svg"
           alt={result.name || "Image is not available"}
