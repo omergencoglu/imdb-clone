@@ -1,21 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center"><a href="https://movie-center.vercel.app/" target="_blank">Movie Center</a></h1>
 
-## Getting Started
+<h2 align="center">
+    <a href="https://omergencoglu.dev/" target="_blank">Omer Gencoglu</a>
+</h2>
 
-First, run the development server:
+<div align="center">
+    <img alt="shieldsio" src="https://img.shields.io/badge/BUILT%20WITH-JAVASCRIPT-blue?style=for-the-badge" />&nbsp;
+    <img alt="shieldsio" src="https://img.shields.io/badge/OPEN-SOURCE-blueviolet?style=for-the-badge" />
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## TL;DR
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is a website that you can find all up-to-date movies. You can search and view the details of any movie. Next.js practice project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Built With
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project was built using these technologies;
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- React.js
+- Next.js
+- Tailwind CSS
+
+## Features
+
+**📖 Multi-Page Layout**
+
+**🎨 Styled with Tailwind CSS, next-themes, react-icons**
+
+**📱 Fully Responsive**
+
+**🌙 Dark/Light Mode**
+
+#### Check out <a href="https://movie-center.vercel.app/" target="_blank">Movie Center</a>.
